@@ -53,12 +53,19 @@ ul {
 }
 
 
-
+/* anchor tag styl */
 a {
     color: white;
     text-decoration: none;
     /* font-weight: bold; */
-    /* transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; */
+    transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+
+a:hover {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 
