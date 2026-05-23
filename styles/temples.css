@@ -19,10 +19,6 @@ body {
 header {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 /* main section */
@@ -36,8 +32,16 @@ main {
 
 /* navbar css */
 nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
+}
+
+nav p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
 }
 
 ul {
