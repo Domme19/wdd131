@@ -16,7 +16,7 @@ body {
 
 /* upper section of the page */
 
-header {
+#main-header {
     background-color: var(--primary-color);
     color: white;
 }
@@ -29,6 +29,28 @@ main {
     text-align: center;
 }
 
+/* menu button */
+#menu {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+
 
 /* navbar css */
 nav {
@@ -38,13 +60,13 @@ nav {
     padding: 2rem 2rem;
 }
 
-nav p {
+#header-title {
     font-size: 25px;
     font-weight: bold;
     margin: 0;
 }
 
-ul {
+.nav-links {
     display: flex;
     gap: 20px;
     list-style-type: none;
@@ -54,7 +76,7 @@ ul {
 
 
 /* anchor tag styl */
-a {
+.nav-links a {
     color: white;
     text-decoration: none;
     /* font-weight: bold; */
@@ -62,7 +84,7 @@ a {
 }
 
 
-a:hover {
+.nav-links a:hover {
     color: orangered;
     font-size: 20px;
     font-weight: 700;
@@ -103,4 +125,36 @@ footer {
     color: white;
     text-align: center;
     margin-top: 2rem;
+}
+
+
+/* media query stuff */
+
+@media (max-width: 600px) {
+    /* navigation needs to be modified */
+    /* we will try to make the anchor tag disappear */
+
+    /* the hamburger button should reappear */
+    #menu {
+        display: block;
+    }
+
+    /* make it appear */
+    .nav-links {
+        display: none; 
+    }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        /* justify-content: center; */
+        margin: 0 auto;
+    }
+
+    #header-title.hidden {
+        display: none;
+    }
+
 }
