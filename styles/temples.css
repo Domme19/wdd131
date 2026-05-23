@@ -75,7 +75,7 @@ nav {
 }
 
 
-/* anchor tag styl */
+/* anchor tag style */
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -141,7 +141,7 @@ footer {
 
     /* make it appear */
     .nav-links {
-        display: none; 
+        display: none;
     }
 
     .nav-links.open {
@@ -157,4 +157,26 @@ footer {
         display: none;
     }
 
+
+    /* grid should be touched as well */
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 20px; */
+        /* padding: 20px; */
+        /* max-width: 1200px;
+        margin: 0 auto; */
+    }
+
+
 }
+
+
+@media (max-width: 800px) and (min-width: 630px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
