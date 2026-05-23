@@ -11,6 +11,5 @@ hamburgerButton.addEventListener('click', () => {
 	hamburgerButton.classList.toggle('open');
     headerTitle.classList.toggle('hidden')
     mainNavigation.classList.toggle('open')
-    //  we need to make the paragraph disappear
 
 });
