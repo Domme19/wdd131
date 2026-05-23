@@ -11,7 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: var(--bg-color);
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 /* upper section of the page */
@@ -22,8 +22,41 @@ header {
     padding: 15px 40px;
 }
 
+/* main section */
+main {
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
 
-/* lower section of the page */
+
+
+/* figure display grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: auto auto auto; */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* figures */
+figure {
+    margin: 0;
+    /* background: white; */
+    padding: 10px;
+
+}
+
+figure img {
+    width: 240px;
+    height: auto;
+}
+
 
 footer {
     padding: 2rem;
