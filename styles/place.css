@@ -179,6 +179,32 @@ picture img {
 }
 
 
+/* resized card */
+.resized-card {
+    display: none;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    background: #ffffff;
+    border-bottom: 1px solid gray;
+}
+
+.resized-card-header {
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.resized-card-body {
+    background-color: #fcfdfc;
+}
+
+.resized-weather-icon{
+  width: 120px;   
+  height: 120px;  
+}
+
 
 
 
@@ -193,8 +219,6 @@ footer {
 
 
 
-
-
 /* media query */
 @media (max-width: 650px) {
     .temp-card {
@@ -206,9 +230,8 @@ footer {
         display: none;
     }
 
-
-    .card-after-resized {
-        display: block;
+    .resized-card {
+        display: flex;
     }
 
 
