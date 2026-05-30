@@ -1,82 +1,80 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WDD 131 - Country Page</title>
-        <meta name="author" content="Evard Mabounda" />
-        <meta
-            name="description"
-            content="page showing the Japanese Country that I would like to visit one day. Tokyo is probably the city that I'd like to visit first."
-        />
-        <!-- <script src="scripts/temples.js" defer></script> -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="styles/place.css" />
-    </head>
 
-    <body>
-        <header>
-            <h1 class="title">Japan</h1>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Japan Info Page</title>
+    <meta name="author" content="Evard Mabounda" />
+    <meta name="description"
+        content="page showing the Japanese Country that I would like to visit one day. Tokyo is probably the city that I'd like to visit first." />
+    <!-- <script src="scripts/temples.js" defer></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles/place.css" />
+</head>
 
-        <main>
-            <div class="card">
-                <div class="title-card-section">
-                    <h2>Data</h2>
-                </div>
-                <div class="body-section-card">
-                    <div class="card-data-row">
-                        <span class="label">Area: </span>
-                        <span class="value">587.041 sq km</span>
-                    </div>
+<body>
+    <header>
+        <h1 class="title">Japan</h1>
+    </header>
 
-                    <div class="card-data-row">
-                        <span class="label">Population: </span>
-                        <span class="value">27.3691018</span>
-                    </div>
+    <main>
+        <!--place the image on the background-->
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/tokyo-large-image.webp" media="(min-width: 650px)" />
 
-                    <div class="card-data-row">
-                        <span class="label">Capital: </span>
-                        <span class="value">587.041 sq km</span>
-                    </div>
+                <img src="images/japan-mobile-pic.jpg" alt="japan">
+            </picture>
 
-                    <div class="card-data-row">
-                        <span class="label">Languages: </span>
-                        <span class="value">587.041 sq km</span>
-                    </div>
-
-                    <div class="card-data-row">
-                        <span class="label">Currency: </span>
-                        <span class="value">587.041 sq km</span>
-                    </div>
-
-                    <div class="card-data-row">
-                        <span class="label">Time Zone: </span>
-                        <span class="value">587.041 sq km</span>
-                    </div>
-
-                    <div class="card-data-row">
-                        <span class="label">Calling Code: </span>
-                        <span class="value">587.041 sq km</span>
-                    </div>
-
-                    <div class="card-data-row">
-                        <span class="label">Internet TLD: </span>
-                        <span class="value">587.041 sq km</span>
-                    </div>
-                </div>
+            <div class="temp-card">
+                <h2>Data</h2>
+                <p>Data 1</p>
+                <p>Data 2</p>
+                <p>Data 3</p>
             </div>
-        </main>
 
-        <footer>
-            <p>
-                &copy;<span id="currentyear"></span> 🌴 Evard Dieuveille
-                Mabounda 🌴 Cape Town
-            </p>
-            <p class="last-mod">
-                Last modification: <span id="lastModified"></span>
-            </p>
-        </footer>
-    </body>
+
+            <div class="temp-card-right">
+                <h2>Data</h2>
+                <h2>Weather</h2>
+                <p>resized-temp-card</p>
+                <p>resized-temp-card</p>
+                <p>resized-temp-card</p>
+            </div>
+        </div>
+
+
+        <!-- resized card -->
+
+        <div class="card-after-resized">
+            <p>temp card</p>
+            <p>temp card</p>
+            <p>temp card</p>
+        </div>
+
+        <div class="card-after-resized">
+            <h2>Weather</h2>
+            <p>resized-temp-card</p>
+            <p>resize-temp-card</p>
+            <p>resize-temp-card</p>
+        </div>
+
+    </main>
+
+
+
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> 🌴 Evard Dieuveille
+            Mabounda 🌴 Cape Town
+        </p>
+        <p class="last-mod">
+            Last modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
 </html>

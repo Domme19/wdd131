@@ -11,7 +11,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: var(--bg-color)
+    padding: 0;
+    background-color: var(--bg-color);
 }
 
 
@@ -31,10 +32,62 @@ header {
 
 
 /* main */
-main{
-    margin-left: 20px;
-    margin-right: 20px;
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: "green";
 }
+
+/* hero image section */
+.hero-container {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    /* margin-top: 20px; */
+    /* position: relative; */
+    position: relative;
+}
+
+picture {
+    width: 100%;
+    height: 100%;
+}
+
+picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+
+/* temp-card */
+.temp-card {
+    background-color: white;
+    width: 300px;
+    height: 450px;
+    padding: 10px;
+    align-content: center;
+    position: absolute;
+    Z-index: 100;
+    top: 10px;
+    left: 10px;
+}
+
+.temp-card-right {
+    background-color: white;
+    width: 300px;
+    height: 450px;
+    padding: 10px;
+    align-content: center;
+    position: absolute;
+    Z-index: 100;
+    bottom: 10px;
+    right: 10px;
+}
+
 
 
 /* card css */
@@ -46,9 +99,7 @@ main{
     padding-bottom: 10px;
     padding-left: 10px;
     padding-left: 10px;
-    position: relative; 
-
-    /* margin */
+    position: relative;
     margin-top: 10px;
 
 }
@@ -69,8 +120,8 @@ main{
 }
 
 .card-data-row {
-    line-height:1.5;
-    display: flex; 
+    line-height: 1.5;
+    display: flex;
     margin-bottom: 10px;
     justify-content: right;
 }
@@ -81,17 +132,54 @@ main{
 
 .value {
     width: 55%;
-    text-align: left; 
+    text-align: left;
 }
 
 
 /* footer */
-
 footer {
     padding: 2rem;
     /* background-color: var(--primary-color); */
     background-color: red;
     color: white;
     text-align: center;
-    margin-top: 2rem;
+}
+
+
+.card-after-resized {
+    display: none; 
+    background-color: green;
+    width: 200px;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    color: white;
+
+    /* width */
+    width: 100%;
+    text-align: center;
+}
+
+
+/* media query */
+@media (max-width: 650px) {
+    .temp-card {
+        display: none;
+    }
+
+
+    .temp-card-right {
+        display: none;
+    }
+
+
+    .card-after-resized {
+        display: block; 
+    }
+
+
 }
