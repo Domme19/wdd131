@@ -44,8 +44,6 @@ main {
     background-color: blue;
     height: 100%;
     width: 100%;
-    /* margin-top: 20px; */
-    /* position: relative; */
     position: relative;
 }
 
@@ -66,13 +64,13 @@ picture img {
 /* temp-card */
 .temp-card,
 .temp-card-right {
-    background-color: white;
-    width: 300px;
-    height: 450px;
-    padding: 10px;
-    align-content: center;
     position: absolute;
-    Z-index: 100;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.92);
+    width: 320px;
+    height: fit-content;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2)
 }
 
 .temp-card {
@@ -80,9 +78,75 @@ picture img {
     left: 10px;
 }
 
+
 .temp-card-right {
     bottom: 10px;
     right: 10px;
+}
+
+
+
+/* Card Container */
+.card {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.92);
+    /* Semi-transparent white */
+    width: 320px;
+    height: fit-content;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Green Header Block */
+.card-header {
+    background-color: #1e7e4e;
+    padding: 16px 24px;
+    width: 85%;
+    position: relative; 
+    left: -10px;
+    top: 10px;
+}
+
+.card-header h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Data Grid Container */
+.card-body {
+    padding: 25px 24px 10px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Row Alignment structure */
+.data-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    font-size: 14.5px;
+    line-height: 1.4;
+}
+
+/* Right-aligned Labels */
+.label {
+    font-weight: 600;
+    color: #333333;
+    width: 110px;
+    /* Fixed width ensures all values line up perfectly */
+    text-align: right;
+    padding-right: 12px;
+}
+
+/* Left-aligned Values */
+.value {
+    color: #444444;
+    flex: 1;
+    text-align: left;
 }
 
 
@@ -117,6 +181,7 @@ footer {
     color: white;
     text-align: center;
 }
+
 
 
 
