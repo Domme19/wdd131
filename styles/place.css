@@ -5,6 +5,8 @@
     --text-color: #fff;
     --accent-color: #f0f0f0;
     --bg-color: #f4f4f4;
+    --color-crimson: #BC002D;
+    --color-white: #ffffff;
 }
 
 
@@ -19,9 +21,32 @@ body {
 /* header */
 
 header {
-    background-color: red;
-    padding: 2rem 2rem;
-    color: white;
+    background-color: var(--color-crimson);
+    color: var(--color-white);
+    text-align: center;
+    padding: var(--space-lg) var(--space-md);
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  letter-spacing: 0.08em;
+  color: var(--color-white);
+  color: var(--color-white);
+  position: relative;
+} */
+
+
+.tagline {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: var(--space-xs);
+    position: relative;
 }
 
 .title {
@@ -69,7 +94,7 @@ picture img {
     width: 320px;
     height: fit-content;
     padding-bottom: 25px;
-    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2); 
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
     margin-left: 10px;
 }
 
@@ -98,12 +123,19 @@ picture img {
     box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
 }
 
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.14);
+}
+
+
 /* Green Header Block */
 .card-header {
     background-color: #1e7e4e;
     padding: 16px 24px;
     width: 85%;
-    position: relative; 
+    position: relative;
     left: -10px;
     top: 10px;
 
@@ -178,7 +210,7 @@ picture img {
 /* resized card */
 .resized-card {
     display: none;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
@@ -196,9 +228,9 @@ picture img {
     background-color: #fcfdfc;
 }
 
-.resized-weather-icon{
-  width: 120px;   
-  height: 120px;  
+.resized-weather-icon {
+    width: 120px;
+    height: 120px;
 }
 
 
@@ -208,7 +240,7 @@ picture img {
 footer {
     padding: 2rem;
     /* background-color: var(--primary-color); */
-    background-color: red;
+    background-color: var(--color-crimson);
     color: white;
     text-align: center;
 }
