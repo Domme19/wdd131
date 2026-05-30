@@ -36,12 +36,11 @@ header {
 main {
     height: 100%;
     width: 100%;
-    background-color: "green";
 }
 
 /* hero image section */
 .hero-container {
-    background-color: blue;
+
     height: 100%;
     width: 100%;
     position: relative;
@@ -70,7 +69,8 @@ picture img {
     width: 320px;
     height: fit-content;
     padding-bottom: 25px;
-    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2)
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2); 
+    margin-left: 10px;
 }
 
 .temp-card {
@@ -107,14 +107,10 @@ picture img {
     left: -10px;
     top: 10px;
 
-
-    /*  */
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .card-header h2 {
