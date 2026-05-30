@@ -48,22 +48,44 @@ function calculateWindChill(t, v) {
 }
 
 
-// Task 2.1 & 2.4: Validate thresholds before execution, then display the outcome
-window.addEventListener("DOMContentLoaded", () => {
+function displayWindChill() {
   const windChillDisplay = document.querySelector("#wind-chill");
   let finalResult = "N/A";
 
-  // Check boundaries for Metric vs Imperial ranges respectively
   const isMetricValid = (units === "C" && temp <= 10 && windSpeed > 4.8);
   const isImperialValid = (units === "F" && temp <= 50 && windSpeed > 3);
 
   if (isMetricValid || isImperialValid) {
-    // Round to 1 decimal place for clean visual presentation
     finalResult = `${calculateWindChill(temp, windSpeed).toFixed(1)} °${units}`;
   }
 
-  // Inject the calculated result or "N/A" into your weather container
   if (windChillDisplay) {
     windChillDisplay.textContent = finalResult;
   }
-});
+}
+
+
+
+window.addEventListener("DOMContentLoaded", displayWindChill);
+window.addEventListener("resize", displayWindChill);
+
+
+// Task 2.1 & 2.4: Validate thresholds before execution, then display the outcome
+// window.addEventListener("DOMContentLoaded", () => {
+//   const windChillDisplay = document.querySelector("#wind-chill");
+//   let finalResult = "N/A";
+
+//   // Check boundaries for Metric vs Imperial ranges respectively
+//   const isMetricValid = (units === "C" && temp <= 10 && windSpeed > 4.8);
+//   const isImperialValid = (units === "F" && temp <= 50 && windSpeed > 3);
+
+//   if (isMetricValid || isImperialValid) {
+//     // Round to 1 decimal place for clean visual presentation
+//     finalResult = `${calculateWindChill(temp, windSpeed).toFixed(1)} °${units}`;
+//   }
+
+//   // Inject the calculated result or "N/A" into your weather container
+//   if (windChillDisplay) {
+//     windChillDisplay.textContent = finalResult;
+//   }
+// });
