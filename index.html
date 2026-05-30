@@ -1,102 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Evard Mabounda's BYU-Idaho WDD131 course home page"
+        />
+        <meta name="author" content="Evard Mabounda" />
+        <title>WDD 131 – Dynamic Web Fundamentals – Evard Mabounda</title>
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="scripts/getdates.js" defer></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Evard Mabounda's BYU-Idaho WDD131 course home page">
-    <meta name="author" content="Evard Mabounda">
-    <title>WDD 131 – Dynamic Web Fundamentals – Evard Mabounda</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-    <script src="scripts/getdates.js" defer></script>
-</head>
+    <body>
+        <header>
+            <div class="header-title">
+                <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+            </div>
 
-<body>
-    <header>
-        <div class="header-title">
-            <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
-        </div>
+            <nav>
+                <!-- link to linkedin -->
+                <a href="https://www.linkedin.com/in/evard-mabounda-904aa1b6/"
+                    >Linkedin</a
+                >
+                <a href="https://byupw.instructure.com/">I-Learn</a>
+                <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                    >Scripture</a
+                >
+                <a href="#">Final Project</a>
+            </nav>
+        </header>
 
-        <nav>
-            <!-- link to linkedin -->
-            <a href="https://www.linkedin.com/in/evard-mabounda-904aa1b6/">Linkedin</a>
-            <a href="https://byupw.instructure.com/">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
-            <a href="#">Final Project</a>
-        </nav>
-    </header>
+        <main>
+            <h1>Evard D. Mabounda</h1>
 
-    <main>
-        <h1>Evard D. Mabounda</h1>
+            <!-- first card -->
+            <div class="grid-container">
+                <section class="card">
+                    <h2>About me</h2>
 
-        <!-- first card -->
-        <div class="grid-container">
-            <section class="card">
-                <h2>About me</h2>
+                    <div class="left-card-content">
+                        <div class="left-top-container">
+                            <div class="bio-container">
+                                <p>
+                                    My name is Evard. I was born in Republic of
+                                    Congo and currently live in South Africa. I
+                                    am currently working as Customer Service
+                                    Agent legal for a Canadian Company. My Faith
+                                    is everything to me as I know there is
+                                    nothing that I cannot do without God. I'd
+                                    love to discover the world a bit more.
+                                </p>
+                            </div>
 
-                <div class="left-card-content">
-                    <div class="left-top-container">
-                        <div class="bio-container">
+                            <img
+                                src="images/profile.jpeg"
+                                alt="Evard"
+                                class="profile-img"
+                            />
+                        </div>
+
+                        <div class="location-container">
+                            <span>Cape Town, South Africa</span>
+                        </div>
+
+                        <div class="left-bottom-container">
+                            <div class="flag-container">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg"
+                                    alt="Congo"
+                                    class="flag-img"
+                                />
+                                <span class="flag-caption"
+                                    >Official Flag of Republic of Congo</span
+                                >
+                            </div>
                             <p>
-                                My name is Evard. I was born in Republic of Congo and currently live in South Africa.
-                                I am currently working as Customer Service Agent legal for a Canadian Company.
-                                My Faith is everything to me as I know there is nothing that I cannot do without God.
-                                I'd love to discover the world a bit more.
+                                Republic of the Congo, also known as
+                                Congo-Brazzaville, is a country in Central
+                                Africa with its capital in Brazzaville, located
+                                along the Congo River across from Kinshasa in
+                                the neighboring Democratic Republic of the
+                                Congo. The country is rich in natural resources
+                                and is known for its vast rainforests, rivers,
+                                and wildlife. Its economy largely depends on oil
+                                production, while the coastal city of
+                                Pointe-Noire serves as the main port and
+                                economic hub.
                             </p>
                         </div>
-
-                        <img src="images/profile.jpeg" alt="Evard" class="profile-img">
                     </div>
+                </section>
 
-                    <div class="location-container">
-                        <span>Cape Town, South Africa</span>
+                <section class="card">
+                    <h2>Web Dev Resources</h2>
+                    <div class="right-card-content">
+                        <ul>
+                            <li>
+                                <a href="https://dev.to/">Dev.to Community</a>
+                            </li>
+                            <li>
+                                <a href="https://www.smashingmagazine.com/"
+                                    >Smashing Magazine</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://css-tricks.com/">CSS Tricks</a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3schools.com/"
+                                    >W3 Schools</a
+                                >
+                            </li>
+                            <li><a href="https://www.udemy.com/">Udemy</a></li>
+                            <li>
+                                <a href="https://picsum.photos/"
+                                    >Lorem Picsum Image Placeholder</a
+                                >
+                            </li>
+                        </ul>
                     </div>
+                </section>
+            </div>
+        </main>
 
-
-                    <div class="left-bottom-container">
-                        <div class="flag-container">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg"
-                                alt="Congo" class="flag-img">
-                            <span class="flag-caption">Official Flag of Republic of Congo</span>
-                        </div>
-                        <p>
-                            Republic of the Congo, also known as Congo-Brazzaville,
-                            is a country in Central Africa with its capital in Brazzaville, located along the Congo
-                            River across from Kinshasa in the neighboring Democratic Republic of the Congo.
-                            The country is rich in natural resources and is known for its vast rainforests, rivers, and
-                            wildlife. Its economy largely depends on oil production, while the coastal city of
-                            Pointe-Noire serves as the main port and economic hub.
-                        </p>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="card">
-                <h2>Web Dev Resources</h2>
-                <div class="right-card-content">
-                    <ul>
-                        <li><a href="https://dev.to/">Dev.to Community</a></li>
-                        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                        <li><a href="https://www.udemy.com/">Udemy</a></li>
-                        <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
-                    </ul>
-                </div>
-
-            </section>
-        </div>
-
-    </main>
-
-    <footer>
-        <p>©2026 🌴 Evard Dieuveille Mabounda 🌴 Cape Town</p>
-        <p class="last-mod">Last modification: <span id="lastModified"></span></p>
-    </footer>
-</body>
-
+        <footer>
+            <p>©2026 🌴 Evard Dieuveille Mabounda 🌴 Cape Town</p>
+            <p class="last-mod">
+                Last modification: <span id="lastModified"></span>
+            </p>
+        </footer>
+    </body>
 </html>
