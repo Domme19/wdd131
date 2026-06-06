@@ -12,6 +12,7 @@ body {
     margin: 0;
     background-color: var(--bg-color);
     /* min-height: 100vh; */
+    /* text-align: center; */
 }
 
 /* upper section of the page */
@@ -19,6 +20,8 @@ body {
     background-color: var(--primary-color);
     color: white;
 }
+
+
 
 /* main section */
 main {
@@ -63,6 +66,10 @@ nav {
     font-size: 25px;
     font-weight: bold;
     margin: 0;
+
+    transition: opacity 0.3s ease;
+    opacity: 1; 
+    visibility: visible;
 }
 
 .nav-links {
@@ -97,7 +104,8 @@ nav {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: 1fr; */
+
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
@@ -105,20 +113,52 @@ nav {
 }
 
 
-/* figures */
-figure {
-    margin: 0;
-    /* background: white; */
-    padding: 10px;
+/* temple card css */
 
-}
-
-figure img {
-    width: 240px;
-    height: auto;
+.temple-card {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
 }
 
 
+/* card title */
+.temple-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+
+/* Paragraphs */
+.temple-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+
+
+.label {
+    font-weight: bold;
+    color: #5a2a83;
+    /* purple tone */
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+
+.temple-card img {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 2px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* footer */
 footer {
     padding: 2rem;
     background-color: var(--primary-color);
@@ -133,15 +173,10 @@ footer {
 /* media query stuff */
 
 @media (max-width: 768px) {
-    /* navigation needs to be modified */
-    /* we will try to make the anchor tag disappear */
-
-    /* the hamburger button should reappear */
     #menu {
         display: block;
     }
 
-    /* make it appear */
     .nav-links {
         display: none;
     }
@@ -151,7 +186,6 @@ footer {
         flex-direction: column;
         align-items: center;
         font-size: 20px;
-        /* justify-content: center; */
         margin: 0 auto;
     }
 
@@ -160,11 +194,10 @@ footer {
     }
 
 
-    /* grid should be touched as well */
     .gallery-grid {
         display: grid;
         grid-template-columns: 1fr;
-    
+
     }
 
 
@@ -172,10 +205,8 @@ footer {
 
 
 @media (max-width: 768px) and (min-width: 650px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-
-
 
