@@ -222,11 +222,17 @@ body {
 }
 
 
-.wireframe-box h3 {
+.wireframe-box-1, .wireframe-2, .wireframe-3 h3 {
     font-size: 1.1rem;
     margin-bottom: 0.75rem;
     color: var(--text-color);
 }
+
+
+.wireframe-box-3 {
+    margin-top: 2rem; 
+}
+
 
 
 .wireframe {
