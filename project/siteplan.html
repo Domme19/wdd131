@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan: Local Cycling Community & Route Hub</title>
+    <meta name="author" content="Evard Mabounda">
+    <meta name="description"
+        content="Site plan and responsive wireframes for VeloHub Local, a responsive web platform featuring interactive cycling route guides, community calendars, and gear maintenance resources.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css" />
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Site Plan: Local Cycling Community & Route Hub</h1>
+        <p class="subtitle">Project Proposal & Wireframes</p>
+    </header>
+
+    <main class="container">
+        <section class="plan-section">
+            <h2>Site Name</h2>
+            <div class="meta-box">
+                <p><strong>Proposed Name:</strong> VeloHub Local</p>
+                <p><strong>Reason:</strong> I chose a cycling website because it connects my love for the sport with
+                    building clean, fast websites. From a coding perspective, this project lets me practice using modern
+                    HTML and CSS (like Flexbox and Grid) to organize real-world information. It gives me a great chance
+                    to design a site that looks good on any screen and makes it easy for riders to find routes, check
+                    gear, and connect with other cyclists.</p>
+            </div>
+        </section>
+
+
+        <section class="plan-section">
+            <h2>Scenarios</h2>
+            <div class="scenarios-list">
+                <div class="scenario-item">
+                    <span class="bullet">➤</span>
+                    <p>Where can I find a weekend gravel route under 30 miles with low elevation gain for a beginner
+                        group ride?</p>
+                </div>
+                <div class="scenario-item">
+                    <span class="bullet">➤</span>
+                    <p>When is the next local charity cycling event or group ride happening, and how do I sign up?</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="plan-section">
+            <h2>Color Scheme</h2>
+            <div class="color-palette">
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #1E293B;"></div>
+                    <div class="color-meta">
+                        <span class="color-name">Primary: #1E293B</span>
+                        <p>Used for headers, primary text, and dark structural containers.</p>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #10B981;"></div>
+                    <div class="color-meta">
+                        <span class="color-name">Secondary: #10B981</span>
+                        <p>Accent/Interactive elements like CTA buttons, active links, and route difficulty flags.</p>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #F8FAFC;"></div>
+                    <div class="color-meta">
+                        <span class="color-name">Accent: #F8FAFC</span>
+                        <p>Clean background canvas to ensure high-contrast text and vibrant route images.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="plan-section">
+            <h2>Typography</h2>
+            <div class="meta-box">
+                <p><strong>Headings & Body:</strong> <span
+                        style="font-family: 'Montserrat', sans-serif; font-weight: 700;">Montserrat (Sans-Serif)</span>
+                    - Selected for its clean, modern athletic aesthetic and crisp readability across all viewport
+                    screens.</p>
+                <p><strong>Technical Labels/Stats:</strong> <span style="font-family: 'Space Mono', monospace;">Space
+                        Mono (Monospaced)</span> - Used specifically for displaying route telemetry data (Distance,
+                    Elevation, GPS coordinates).</p>
+            </div>
+        </section>
+
+
+
+        <section class="plan-section">
+            <h2>Wireframes</h2>
+
+            <div class="wireframe-grid">
+                <div class="wireframe-box">
+                    <h3>Mobile View (Home)</h3>
+                    <div class="wireframe mobile-layout">
+                        <div class="wf-element nav">[Logo / Menu ☰]</div>
+                        <div class="wf-element hero">[Hero Summary & CTA]</div>
+                        <div class="wf-element content-block">[Route Guide Preview 1]</div>
+                        <div class="wf-element content-block">[Community Calendar List]</div>
+                        <div class="wf-element content-block">[Dynamic Gallery Carousel]</div>
+                        <div class="wf-element footer">[Footer Links]</div>
+                    </div>
+                </div>
+
+                <div class="wireframe-box">
+                    <h3>Desktop View (Home)</h3>
+                    <div class="wireframe desktop-layout">
+                        <div class="wf-element nav">[Logo | Navigation Links]</div>
+                        <div class="wf-element hero">[High-Impact Hero Section & Featured Route CTA]</div>
+                        <div class="wf-element grid-item">[Interactive Route Guide]</div>
+                        <div class="wf-element grid-item">[Community Calendar]</div>
+                        <div class="wf-element grid-item-wide">[Dynamic Gallery Grid]</div>
+                        <div class="wf-element footer">[Footer Links]</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wireframe-box" style="margin-top: 2rem;">
+                <h3>About Page: Desktop View</h3>
+                <div class="wireframe about-desktop-layout">
+                    <div class="wf-element nav">[Logo | Navigation Links]</div>
+                    <div class="wf-element sidebar">[About Community / Objective Narrative]</div>
+                    <div class="wf-element main-content">[Gear Maintenance Guides & Core Team Information]</div>
+                    <div class="wf-element footer">[Footer Links]</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy;<span id="currentyear"></span> 🌴 Evard Dieuveille Mabounda 🌴 Cape Town</p>
+        <p class="last-mod">Last modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
