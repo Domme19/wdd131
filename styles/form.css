@@ -21,7 +21,6 @@ body {
 
 
 /* header and footer styling */
-
 header,
 footer {
     background-color: var(--primary-purple);
@@ -29,3 +28,184 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+
+/* main container form */
+main {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: var(--form-bg);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Inputs, Select, and Textarea */
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width */
+}
+
+
+
+/* Rating Radio Buttons */
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+
+
+.rating-container label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+
+/* Features Checkbox Section */
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+/* inner container  */
+.inner-container {
+    margin-bottom: 15px;
+    border-width: 2px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+
+.checkbox-group label {
+    font-weight: normal;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+
+
+/* Submit Button */
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eee;
+    border: 1px solid #999;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ddd;
+}
+
+.optional {
+    color: #442d6d;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+
+/* review section */
+/* .review-container {
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
+
+
+.another-review-btn {
+    color: var(--primary-purple);
+    font-weight: bold;
+}
+
+
+.main-review-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+main {
+    width: 95%; 
+    margin: 20px auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.rating-container {
+    flex-wrap: wrap;
+} */
+
+
+/* media query */
+@media screen and (min-width: 600px) {
+    main {
+        max-width: 500px; 
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    input[type="submit"] {
+        width: 100%; 
+    }
+}
+
+
+
+
+
+
+
+
