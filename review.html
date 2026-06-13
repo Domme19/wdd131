@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="author" content="Evard Mabounda">
+    <meta name="description" content="the review page that shows the number of reviews already done.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Submission Received</h1>
+    </header>
+
+    <main class="main-review-container">
+        <h2>Thank you for your feedback!</h2>
+        <p>Your product review has been successfully submitted.</p>
+
+        <div class="review-container">
+            <p>You have completed <strong><span id="reviewDisplay">0</span></strong> reviews.</p>
+        </div>
+
+        <a href="form.html" class="another-review-btn">Submit another review</a>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌴 Evard Dieuveille Mabounda 🌴 Cape Town</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

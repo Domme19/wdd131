@@ -153,7 +153,7 @@ input[type="submit"]:hover {
 
 
 /* review section */
-/* .review-container {
+.review-container {
     margin: 30px 0;
     padding: 20px;
     background: rgba(255, 255, 255, 0.5);
@@ -182,8 +182,7 @@ main {
 
 .rating-container {
     flex-wrap: wrap;
-} */
-
+}
 
 /* media query */
 @media screen and (min-width: 600px) {
