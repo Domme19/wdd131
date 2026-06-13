@@ -152,38 +152,6 @@ input[type="submit"]:hover {
 }
 
 
-/* review section */
-.review-container {
-    margin: 30px 0;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 8px;
-}
-
-
-.another-review-btn {
-    color: var(--primary-purple);
-    font-weight: bold;
-}
-
-
-.main-review-container {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-
-main {
-    width: 95%; 
-    margin: 20px auto;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-.rating-container {
-    flex-wrap: wrap;
-}
-
 /* media query */
 @media screen and (min-width: 600px) {
     main {
