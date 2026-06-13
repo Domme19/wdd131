@@ -1,0 +1,31 @@
+:root {
+    --primary-purple: #310331;
+    /* Header/Footer background */
+    --form-bg: #d1cbd4;
+    /* Form container background */
+    --text-color: #000;
+    --white: #ffffff;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* body  */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* Subtle page background */
+}
+
+
+/* header and footer styling */
+
+header,
+footer {
+    background-color: var(--primary-purple);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
