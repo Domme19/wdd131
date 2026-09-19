@@ -62,6 +62,12 @@ nav a:hover {
 }
 
 
+/* main content area */
+main {
+    background-color: var(--light-gray);
+}
+
+
 /* middle content */
 h1{
     text-align: center;
