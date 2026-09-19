@@ -50,6 +50,15 @@ nav a {
     color: white;
     text-decoration: none;
     font-family: "Comfortaa", system-ui, sans-serif;
+
+    transition: color 0.2s ease;
+}
+
+/* adding hover effect transition */
+nav a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    font-size: 20px;
 }
 
 
