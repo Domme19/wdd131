@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Japan Info Page</title>
+    <meta name="author" content="Evard Mabounda" />
+    <meta name="description"
+        content="page showing the Japanese Country that I would like to visit one day. Tokyo is probably the city that I'd like to visit first." />
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Japan</h1>
+        <p class="tagline">Land of the Rising Sun</p>
+    </header>
+
+    <main>
+        <!--place the image on the background-->
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/mount-fuji-large.webp" media="(min-width: 650px)" />
+                <img src="images/japan-mobile.webp" alt="japan">
+            </picture>
+
+
+            <div class="temp-card">
+                <div class="card-header">
+                    <h2>Data</h2>
+                </div>
+
+                <div class="card-body">
+                    <div class="data-row">
+                        <span class="label">Area:</span>
+                        <span class="value">377,975 sq km</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Population:</span>
+                        <span class="value">123,750,000</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Capital:</span>
+                        <span class="value">Tokyo</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Languages:</span>
+                        <span class="value">Japanese</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Currency:</span>
+                        <span class="value">Japanese Yen</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Time Zone:</span>
+                        <span class="value">UTC+9</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Calling Code:</span>
+                        <span class="value">+81</span>
+                    </div>
+
+                    <div class="data-row">
+                        <span class="label">Internet TLD:</span>
+                        <span class="value">.jp</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="temp-card-right">
+                <div class="card-header">
+                    <h2>Weather</h2>
+
+                    <svg class="weather-icon" viewBox="0 0 64 64" width="40" height="40"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="28" cy="24" r="10" fill="#ffa500" stroke="#ff7f00" stroke-width="2" />
+                        <path d="M28 8v4M28 36v4M12 24h4M40 24h4" stroke="#ff7f00" stroke-width="3"
+                            stroke-linecap="round" />
+                        <path d="M17 13l3 3M36 32l3 3M17 35l3-3M36 16l3-3" stroke="#ff7f00" stroke-width="3"
+                            stroke-linecap="round" />
+
+                        <path d="M46 40a10 10 0 0 0-18.7-4.8 7 7 0 0 0-10.3 6.3 7 7 0 0 0 7 7h22a10 10 0 0 0 0-20z"
+                            fill="#f2f2f2" />
+                    </svg>
+                </div>
+
+
+                <div class="card-body">
+                    <div class="data-row">
+                        <span class="label">Temperature:</span>
+                        <span class="value" id="temperature">8</span>
+                    </div>
+
+                    <div class="data-row">
+                        <span class="label">Conditions:</span>
+                        <span class="value">Partly Cloudy</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Wind speed:</span>
+                        <span class="value" id="wind-speed">20</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Wind Chill:</span>
+                        <span class="value" id="wind-chill">--</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- resized card -->
+
+            <div class="resized-card">
+                <div class="resized-card-header">
+                    <h2> Data</h2>
+                </div>
+
+                <div class="resized-card-body">
+                    <div class="data-row">
+                        <span class="label">Area:</span>
+                        <span class="value">377,975 sq km</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Population:</span>
+                        <span class="value">123,750,000</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Capital:</span>
+                        <span class="value">Tokyo</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Languages:</span>
+                        <span class="value">Japanese</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Currency:</span>
+                        <span class="value">Japanese Yen</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Time Zone:</span>
+                        <span class="value">UTC+9</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Calling Code:</span>
+                        <span class="value">+81</span>
+                    </div>
+
+                    <div class="data-row">
+                        <span class="label">Internet TLD:</span>
+                        <span class="value">.jp</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resized-card">
+                <div class="resized-card-header">
+                    <h2>Weather</h2>
+
+                    <svg class="resized-weather-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="#231f20" stroke-width="2.5" stroke-linecap="round">
+                            <line x1="32" y1="12" x2="32" y2="16" />
+                            <line x1="43.3" y1="16.7" x2="40.5" y2="19.5" />
+                            <line x1="48" y1="28" x2="44" y2="28" />
+                            <line x1="43.3" y1="39.3" x2="40.5" y2="36.5" />
+                            <line x1="20.7" y1="39.3" x2="23.5" y2="36.5" />
+                            <line x1="16" y1="28" x2="20" y2="28" />
+                            <line x1="20.7" y1="16.7" x2="23.5" y2="19.5" />
+                        </g>
+
+                        <circle cx="32" cy="28" r="10" fill="#fbb03b" stroke="#231f20" stroke-width="2.5" />
+
+                        <path
+                            d="M46.5,45.5 C51,45.5 54,42.5 54,38 C54,33.5 50.5,31 46.5,31 C46.5,26.5 42,24 37.5,24 C31.5,24 28.5,29 28.5,32.5 C26,32.5 24,34.5 24,37.5 C24,41 27,45.5 32,45.5 Z"
+                            fill="#dbcaad" stroke="#231f20" stroke-width="2.5" stroke-linejoin="round" />
+
+                        <g fill="#231f20">
+                            <circle cx="32" cy="50" r="1.5" />
+                            <circle cx="36" cy="50" r="1.5" />
+                            <circle cx="40" cy="50" r="1.5" />
+                            <circle cx="44" cy="50" r="1.5" />
+                            <circle cx="34" cy="54" r="1.5" />
+                            <circle cx="38" cy="54" r="1.5" />
+                            <circle cx="42" cy="54" r="1.5" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="resized-card-body">
+                    <div class="data-row">
+                        <span class="label">Temperature:</span>
+                        <span class="value" id="temperature">8</span>
+                    </div>
+
+                    <div class="data-row">
+                        <span class="label">Conditions:</span>
+                        <span class="value">Partly Cloudy</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Wind speed:</span>
+                        <span class="value" id="wind-speed">20</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">Wind Chill:</span>
+                        <span class="value" id="wind-chill">--</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> 🌴 Evard Dieuveille
+            Mabounda 🌴 Cape Town
+        </p>
+        <p class="last-mod">
+            Last modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
