@@ -1,0 +1,265 @@
+/* colors bound to be changed */
+
+:root {
+    --primary-color: #3b0062;
+    --text-color: #fff;
+    --accent-color: #f0f0f0;
+    --bg-color: #f4f4f4;
+    --color-crimson: #BC002D;
+    --color-white: #ffffff;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+
+/* header */
+
+header {
+    background-color: var(--color-crimson);
+    color: var(--color-white);
+    text-align: center;
+    padding: var(--space-lg) var(--space-md);
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  letter-spacing: 0.08em;
+  color: var(--color-white);
+  color: var(--color-white);
+  position: relative;
+} */
+
+
+.tagline {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: var(--space-xs);
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+/* main */
+main {
+    height: 100%;
+    width: 100%;
+}
+
+/* hero image section */
+.hero-container {
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+picture {
+    width: 100%;
+    height: 100%;
+}
+
+picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+
+/* temp-card */
+.temp-card,
+.temp-card-right {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.92);
+    width: 320px;
+    height: fit-content;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+}
+
+.temp-card {
+    top: 10px;
+    left: 10px;
+}
+
+
+.temp-card-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+/* Card Container */
+.card {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.92);
+    /* Semi-transparent white */
+    width: 320px;
+    height: fit-content;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.14);
+}
+
+
+/* Green Header Block */
+.card-header {
+    background-color: #1e7e4e;
+    padding: 16px 24px;
+    width: 85%;
+    position: relative;
+    left: -10px;
+    top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Data Grid Container */
+.card-body {
+    padding: 25px 24px 10px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Row Alignment structure */
+.data-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    font-size: 14.5px;
+    line-height: 1.4;
+}
+
+/* Right-aligned Labels */
+.label {
+    font-weight: 600;
+    color: #333333;
+    width: 110px;
+    /* Fixed width ensures all values line up perfectly */
+    text-align: right;
+    padding-right: 12px;
+}
+
+/* Left-aligned Values */
+.value {
+    color: #444444;
+    flex: 1;
+    text-align: left;
+}
+
+
+
+.card-after-resized {
+    display: none;
+    background-color: green;
+    width: 200px;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+
+    /* width */
+    width: 100%;
+    text-align: center;
+}
+
+
+/* resized card */
+.resized-card {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    background: #ffffff;
+    border-bottom: 1px solid gray;
+}
+
+.resized-card-header {
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.resized-card-body {
+    background-color: #fcfdfc;
+}
+
+.resized-weather-icon {
+    width: 120px;
+    height: 120px;
+}
+
+
+
+
+/* footer */
+footer {
+    padding: 2rem;
+    /* background-color: var(--primary-color); */
+    background-color: var(--color-crimson);
+    color: white;
+    text-align: center;
+}
+
+
+
+/* media query */
+@media (max-width: 650px) {
+    .temp-card {
+        display: none;
+    }
+
+
+    .temp-card-right {
+        display: none;
+    }
+
+    .resized-card {
+        display: flex;
+    }
+
+
+}
