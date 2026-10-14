@@ -1,0 +1,46 @@
+/* ==========================================
+   VeloHub Local - References Page Stylesheet
+   ========================================== */
+
+body {
+    font-family: 'Montserrat', sans-serif, system-ui;
+    background-color: #F8FAFC;
+    color: #334155;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #1E293B;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+a {
+    color: #10B981;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

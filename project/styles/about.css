@@ -150,6 +150,8 @@ nav ul li a:hover, nav ul li a.active {
     gap: 2rem;
 }
 
+
+
 .card {
     background-color: var(--card-bg);
     border-radius: 8px;
