@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeloHub Local - Local Cycling Community & Route Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Linked Home Page Specific CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="5.5" cy="18.5" r="3.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="3.5"></circle>
+                    <path d="M12 18.5V14l-3-3 4-3 2 3h3"></path>
+                </svg>
+                <span class="logo-text">VeloHub Local</span>
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="routes.html">Routes & Events</a></li>
+                    <li><a href="about.html">About & Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Your Next Ride</h1>
+                <p>Connect with local cyclists, explore curated road, gravel, and mountain bike trails, and join weekly
+                    group rides.</p>
+                <a href="routes.html" class="btn">Explore Routes & Events</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <h2 class="section-title">Featured Highlights</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623266cf20?auto=format&fit=crop&w=600&q=80"
+                        alt="Gravel Route" loading="lazy">
+                    <div class="card-body">
+                        <h3>Interactive Route Guides</h3>
+                        <p>Browse curated road, gravel, and mountain bike routes complete with distance, elevation gain,
+                            and difficulty metrics.</p>
+                        <a href="routes.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View
+                            Routes</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1505705629583-0971b7f03d5f?auto=format&fit=crop&w=600&q=80"
+                        alt="Group Ride" loading="lazy">
+                    <div class="card-body">
+                        <h3>Community Calendar</h3>
+                        <p>Stay up to date with weekend group rides, charity cycling events, and local races. RSVP and
+                            connect with fellow riders.</p>
+                        <a href="routes.html#calendar" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View
+                            Calendar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80"
+                        alt="Bike Maintenance" loading="lazy">
+                    <div class="card-body">
+                        <h3>Gear & Maintenance</h3>
+                        <p>Learn essential beginner-friendly maintenance tips, from fixing a flat tire on the trail to
+                            indexing your gears properly.</p>
+                        <a href="about.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Read Tips</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saved Route Display -->
+            <div
+                style="margin-top: 4rem; background: #FFFFFF; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); border: 1px solid var(--border-color); text-align: center;">
+                <h3>Your Saved Route Preference</h3>
+                <p id="saved-preference-display">No favorite route saved yet. Select your favorite on the routes page!
+                </p>
+                <div id="dynamic-greeting"
+                    style="font-family: 'Space Mono', monospace; color: var(--secondary); font-weight: 700; margin-top: 1rem;">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 VeloHub Local. All rights reserved.</p>
+            <p><a href="references.html">References & Citations</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
