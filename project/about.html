@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeloHub Local - About & Tips</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Linked About Page Specific CSS -->
+    <link rel="stylesheet" href="styles/about.css" />
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5.5" cy="18.5" r="3.5"></circle><circle cx="18.5" cy="18.5" r="3.5"></circle><path d="M12 18.5V14l-3-3 4-3 2 3h3"></path></svg>
+                <span class="logo-text">VeloHub Local</span>
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="routes.html">Routes & Events</a></li>
+                    <li><a href="about.html" class="active">About & Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title">About VeloHub Local</h1>
+        
+        <div class="grid-2" style="align-items: center; margin-bottom: 4rem;">
+            <div>
+                <h2>Our Mission</h2>
+                <p>VeloHub Local was created to connect local cycling enthusiasts with reliable routes, beginner-friendly maintenance tips, and an active community calendar. Whether you ride road, gravel, or mountain bikes, our platform brings local riders together.</p>
+                <p>We believe in building clean, fast, and accessible web experiences that look exceptional on any device while organizing real-world cycling data effectively.</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" alt="Cyclist on road" loading="lazy" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+        </div>
+
+        <h2 class="section-title">Gear & Maintenance Tips</h2>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Fixing a Flat Tire on the Trail</h3>
+                    <p>Always carry a spare tube, tire levers, and a mini-pump or CO2 inflator. Pry one bead of the tire off the rim, pull out the punctured tube, check the inside of the tire for thorns or glass, insert the new tube partially inflated, and seat the bead back onto the rim.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h3>Indexing Your Gears</h3>
+                    <p>If your chain skips or hesitates when shifting, use the barrel adjuster on your rear derailleur. Turn it counter-clockwise (left) to add cable tension if the chain struggles to shift to larger cogs, or clockwise (right) to ease tension if it struggles to drop to smaller cogs.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 VeloHub Local. All rights reserved.</p>
+            <p><a href="references.html">References & Citations</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
