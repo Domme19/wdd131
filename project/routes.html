@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeloHub Local - Routes & Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Linked Routes Page Specific CSS -->
+    <link rel="stylesheet" href="routes.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5.5" cy="18.5" r="3.5"></circle><circle cx="18.5" cy="18.5" r="3.5"></circle><path d="M12 18.5V14l-3-3 4-3 2 3h3"></path></svg>
+                <span class="logo-text">VeloHub Local</span>
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="routes.html" class="active">Routes & Events</a></li>
+                    <li><a href="about.html">About & Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title">Interactive Route Guides</h1>
+        
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Routes</button>
+            <button class="filter-btn" data-filter="road">Road</button>
+            <button class="filter-btn" data-filter="gravel">Gravel</button>
+            <button class="filter-btn" data-filter="mtb">Mountain Bike</button>
+        </div>
+
+        <div id="route-grid" class="grid-3"></div>
+
+        <div id="calendar" style="margin-top: 5rem;">
+            <h2 class="section-title">Community Calendar & Group Rides</h2>
+            <div id="event-grid" class="grid-2"></div>
+        </div>
+
+        <div style="margin-top: 5rem; background: #FFFFFF; padding: 2.5rem; border-radius: 8px; box-shadow: var(--shadow); border: 1px solid var(--border-color);">
+            <h2 style="margin-bottom: 1.5rem;">Group Ride RSVP Form</h2>
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="rider-name">Full Name</label>
+                    <input type="text" id="rider-name" name="riderName" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="ride-select">Select Group Ride</label>
+                    <select id="ride-select" name="rideSelect" required>
+                        <option value="">-- Choose a Ride --</option>
+                        <option value="Saturday Morning Coffee Loop">Saturday Morning Coffee Loop</option>
+                        <option value="Sunset Gravel Grinder">Sunset Gravel Grinder</option>
+                        <option value="Sunday Valley Century">Sunday Valley Century</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="emergency-contact">Emergency Contact Number</label>
+                    <input type="tel" id="emergency-contact" name="emergencyContact" required placeholder="e.g. 555-0199">
+                </div>
+                <button type="submit" class="btn">Submit RSVP</button>
+            </form>
+            <div id="form-feedback" style="margin-top: 1rem; font-weight: 600; color: var(--secondary);"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 VeloHub Local. All rights reserved.</p>
+            <p><a href="references.html">References & Citations</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
